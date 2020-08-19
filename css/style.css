@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+#addItem {
+    border-radius: 50px ;
+    height: 40px ;
+    width: 40px ;
+    font-size: 2em ;
+    align-self: flex-end;
+    background-color: #ffc600;
+    border: none;
+    margin: 5px 0px;
+}
+
+.item {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    border-bottom: 1px solid grey;
+}
+
+.label {
+    width: 400px;
+    overflow: hidden;
+    letter-spacing: .7px;
+}
+
+.checkbox {
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#title {
+    color: #ffc600;
+    margin: 15px 10px;
+}
+
+.fas {
+    margin: 0px 20px;
+}
+
+.far {
+    color: red;
+}
+
+#inputForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    margin-top: 6px;
+}
+
+#taskInput,  #saveButton{
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.404);
+    color: white;
+}
+
+#taskInput {
+    width: 433px;
+}
+
+#taskInput:focus, #saveButton:focus, #addItem:focus {
+    outline: none;
+}
